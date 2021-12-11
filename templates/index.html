@@ -1,0 +1,28 @@
+{% extends "boilerplate.html" %}
+{% block title %}
+Main | Fake Job Predictor
+{% endblock %}
+{% block content %}
+<div class="container my-5 text-center">
+    <h1 class="text-danger">FAKE JOB PREDICTOR...FOR ALL YOUR NEEDS</h1>
+    <h4 class="text-success">
+        Classify a real or fake job post for you
+    </h4>
+  </div>
+
+  <div class="container inp-form">
+    <form action="/answer" method="post">
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Your Name</label>
+            <input type="text" class="form-control" name="name" placeholder="Enter your name here">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Enter Job Post</label>
+            <textarea class="form-control" name="jobpost" placeholder="Enter job post text here" rows="3"></textarea>
+          </div>
+          <div class="mb-3">
+              <input class="btn btn-success btn-md w-100" type="submit" value="Predict">
+          </div>
+    </form>
+</div>
+{% endblock %}
