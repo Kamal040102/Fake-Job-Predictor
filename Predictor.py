@@ -5,7 +5,7 @@ from sklearn.metrics import accuracy_score, plot_confusion_matrix, confusion_mat
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.model_selection import train_test_split
 import nltk
-# nltk.download("stopwords")
+nltk.download("stopwords")
 from nltk.corpus import stopwords
 
 
