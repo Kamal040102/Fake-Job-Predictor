@@ -1,12 +1,12 @@
 {% extends "boilerplate.html" %}
 {% block title %}
-Main | Fake Job Predictor
+Home | Fake Job Predictor
 {% endblock %}
 {% block content %}
 <div class="container my-5 text-center">
     <h1 class="text-danger">FAKE JOB PREDICTOR...FOR ALL YOUR NEEDS</h1>
     <h4 class="text-success">
-        Classify a real or fake job post for you
+        Classify a real or fake job post for you 😎
     </h4>
   </div>
 
@@ -14,7 +14,7 @@ Main | Fake Job Predictor
     <form action="/answer" method="post">
         <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Your Name</label>
-            <input type="text" class="form-control" name="name" placeholder="Enter your name here">
+            <input type="text" class="form-control" autocomplete="off" name="name" placeholder="Enter your name here">
           </div>
           <div class="mb-3">
             <label for="exampleFormControlTextarea1" class="form-label">Enter Job Post</label>
